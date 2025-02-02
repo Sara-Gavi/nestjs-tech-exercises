@@ -18,8 +18,8 @@ export class TasksService {
     return newTask; // retornar la tarea creada
   }
 
-  findAll() {
-    return `This action returns all tasks`;
+  findAll(): Task[] {
+    return this.tasks; //Retorna todas las tareas
   }
 
   findOne(id: number) {
