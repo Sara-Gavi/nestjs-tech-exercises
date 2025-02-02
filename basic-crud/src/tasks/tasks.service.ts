@@ -41,7 +41,10 @@ export class TasksService {
     return updateTask; // retornar la tarea actualizada
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} task`;
+  remove(id: number): boolean {
+    const index = this.tasks.findIndex((task) => task.id === id);
+    if (index === -1) return false; // si la tarea no existe, devolvemos false
+    this.tasks.splice(index, 1); // Eliminamos la tarea del array
+    return true; // Retornamos true para indicar que se eliminó correctamente
   }
 }
