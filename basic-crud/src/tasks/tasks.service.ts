@@ -4,6 +4,8 @@ import { UpdateTaskDto } from './dto/update-task.dto';
 
 @Injectable()
 export class TasksService {
+  private tasks: Task[] = []; // Para almacenar las tareas temporalmente
+
   create(createTaskDto: CreateTaskDto) {
     return 'This action adds a new task';
   }
