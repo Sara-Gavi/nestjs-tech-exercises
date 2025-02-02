@@ -22,8 +22,8 @@ export class TasksService {
     return this.tasks; //Retorna todas las tareas
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} task`;
+  findOne(id: number): Task {
+    return this.tasks.find((task) => task.id === id);
   }
 
   update(id: number, updateTaskDto: UpdateTaskDto) {
