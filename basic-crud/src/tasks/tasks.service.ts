@@ -26,8 +26,19 @@ export class TasksService {
     return this.tasks.find((task) => task.id === id);
   }
 
-  update(id: number, updateTaskDto: UpdateTaskDto) {
-    return `This action updates a #${id} task`;
+  update(id: number, updateTaskDto: UpdateTaskDto): Task {
+    const taskIndex = this.tasks.findIndex((task) => task.id === id);
+
+    if (taskIndex === -1) {
+      return null; // retorna null si la tarea no existe
+    }
+
+    //obtener la tarea
+    const updateTask = { ...this.tasks[taskIndex], ...updateTaskDto };
+
+    // Reemplazar la tarea en el array con los nuevos valores
+
+    return updateTask; // retornar la tarea actualizada
   }
 
   remove(id: number) {
