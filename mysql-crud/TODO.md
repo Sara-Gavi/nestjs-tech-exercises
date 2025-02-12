@@ -14,6 +14,14 @@
 
 - Se añadió `node_modules/` y `dist/` para evitar que Git rastree estos directorios.
 
+### TablePlus 🛠️
+
+[TablePlus](https://tableplus.com/) para gestionar bases de datos. Compatible con MySQL, PostgreSQL, SQLite ... Facilita la conexión, visualización y edición de datos en tiempo real.
+
+- Visualización clara de las tablas y relaciones de la base de datos.
+- Soporte para múltiples bases de datos y conexiones simultáneas.
+- Apoyo visual en el proyecto
+
 # TODO
 
 - Configurar TypeORM
