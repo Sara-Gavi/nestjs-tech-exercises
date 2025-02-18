@@ -24,6 +24,7 @@
 
 # TODO
 
+- Solucionar errores en la conexión Docker con Mysql
 - Configurar TypeORM
 - Crear entidades MySQL
 - Probar endpoints REST
