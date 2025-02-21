@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { CatsModule } from './cats/cats.module';
-import { CatsModule } from './cats/cats.module';
 
 @Module({
   imports: [
