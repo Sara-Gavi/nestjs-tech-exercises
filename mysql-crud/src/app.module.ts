@@ -14,7 +14,7 @@ import { CatsModule } from './cats/cats.module';
       password: 'root',
       database: 'db_crud',
       autoLoadEntities: true, // Carga las entidades automáticamente
-      synchronize: true, // Crea y actualiza tablas automáticamente NO USAR EN PRODUCCION)
+      synchronize: true, // Crea y actualiza tablas automáticamente NO USAR EN PRODUCCION
     }),
     CatsModule, // Módulo de ejemplo del tutorial
   ],
