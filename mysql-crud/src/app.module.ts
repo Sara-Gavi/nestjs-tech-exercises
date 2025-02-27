@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { CatsModule } from './cats/cats.module';
+import { BreedsModule } from './breeds/breeds.module';
 
 @Module({
   imports: [
@@ -16,7 +17,8 @@ import { CatsModule } from './cats/cats.module';
       autoLoadEntities: true, // Carga las entidades automáticamente
       synchronize: true, // Crea y actualiza tablas automáticamente NO USAR EN PRODUCCION
     }),
-    CatsModule, // Módulo de ejemplo del tutorial
+    CatsModule,
+    BreedsModule, // Módulo de ejemplo del tutorial
   ],
   controllers: [],
   providers: [],
